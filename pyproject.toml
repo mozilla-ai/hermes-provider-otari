@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68,<81"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-provider-otari"
+version = "0.1.0"
+description = "Otari LLM gateway model provider for Hermes Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Mozilla.ai" }]
+keywords = ["hermes-agent", "hermes-plugin", "model-provider", "otari", "llm-gateway"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mozilla-ai/hermes-provider-otari"
+Issues = "https://github.com/mozilla-ai/hermes-provider-otari/issues"
+Otari = "https://github.com/mozilla-ai/otari"
+
+# Hermes discovers pip-installed plugins through this group; the module registers on import.
+[project.entry-points."hermes_agent.plugins"]
+otari = "otari"
+
+[tool.setuptools]
+packages = ["otari"]
+
+[tool.setuptools.package-data]
+otari = ["plugin.yaml"]

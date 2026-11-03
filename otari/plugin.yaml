@@ -1,0 +1,11 @@
+name: otari
+kind: model-provider
+version: 0.1.0
+description: Otari LLM gateway (OpenAI-compatible, keys, budgets and usage tracking)
+author: Mozilla.ai
+requires_hermes: ">=0.22.5"
+requires_env:
+  - name: OTARI_API_KEY
+    description: Otari API key
+    secret: true
+    url: https://otari.ai
