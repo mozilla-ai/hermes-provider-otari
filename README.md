@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/otari-logo.svg" width="320" alt="Otari logo"/>
+</p>
+
 # Otari provider for Hermes Agent
 
 A [Hermes Agent](https://github.com/NousResearch/hermes-agent) model-provider plugin for
@@ -62,4 +66,4 @@ Requires Hermes Agent 0.22.5 or later.
 
 ## License
 
-Apache-2.0
+Apache-2.0, the same license as [Otari](https://github.com/mozilla-ai/otari). See [LICENSE](LICENSE).
